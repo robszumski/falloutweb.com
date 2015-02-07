@@ -19,5 +19,5 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_LOCK_DIR /etc/apache2/falloutweb/
 ENV APACHE_PID_FILE /opt/apache
-EXPOSE 80
+EXPOSE 8082
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
